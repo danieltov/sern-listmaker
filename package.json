@@ -1,0 +1,32 @@
+{
+  "name": "sern-listmaker",
+  "version": "1.0.0",
+  "description": "// _ ==================== SERVER SETUP ==================== _// const express = require('express'); const logger = require('morgan'); const connectDB = require('./config/db'); const app = express(); const routes = require('./routes'); const PORT = process.env.PORT || 5001;",
+  "main": "server.js",
+  "dependencies": {
+    "dotenv": "^8.0.0",
+    "express": "^4.17.1",
+    "morgan": "^1.9.1",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {
+    "concurrently": "^4.1.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server",
+    "server": "nodemon server",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danieltov/sern-listmaker.git"
+  },
+  "author": "Daniel Tovar & Joshua Aragon",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/danieltov/sern-listmaker/issues"
+  },
+  "homepage": "https://github.com/danieltov/sern-listmaker#readme"
+}
